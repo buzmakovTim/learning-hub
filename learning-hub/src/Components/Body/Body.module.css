@@ -1,0 +1,7 @@
+.mainContainer {
+    background-color: #3c4350;
+    width: 90%;
+    height: 100%;
+    /* height: 130px; */
+    flex-grow: 1;
+}

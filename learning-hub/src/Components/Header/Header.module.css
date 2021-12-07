@@ -1,0 +1,8 @@
+.mainContainer {
+    background-color: #282c34;
+    width: 90%;
+    height: 130px;
+    margin-top: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
