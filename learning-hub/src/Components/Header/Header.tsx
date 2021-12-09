@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 export const Header = () => {
 
     return <div className={classes.mainContainer}>
-
+        
         <p>Header</p>
 
         {/* Navigation */}

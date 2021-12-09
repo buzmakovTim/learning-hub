@@ -1,14 +1,18 @@
 import React from 'react'
 import classes from './Sidebar.module.css'
-import { Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 export const Sidebar = () => {
 
 
-
     return <div className={classes.mainContainer}>
+            <Routes>
+            {/* @ts-ignore */}
+            <Route path={'/about'} route={<p>Home</p>}/>
+            </Routes>
+            
 
-            {/* <Route path={'/home'} render={ () => <p>Home</p> }/> */}
     
     </div>
 }
