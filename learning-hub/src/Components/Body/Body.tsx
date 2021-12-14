@@ -1,6 +1,8 @@
 import React from 'react'
 import { Sidebar } from '../Sidebar/Sidebar'
 import classes from './Body.module.css'
+import { Route, Routes } from 'react-router-dom'
+import { ReactContainer } from '../Pages/React/ReactContainer'
 
 export const Body = () => {
 
@@ -14,8 +16,10 @@ export const Body = () => {
         </div>
 
         {/* Content */}
-        <div>
-            
+        <div className={classes.body}>
+            <Routes>   
+                <Route path='/react/*' element={<ReactContainer/>}/>
+            </Routes>
         </div>
 
     </div>

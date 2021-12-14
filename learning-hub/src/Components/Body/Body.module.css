@@ -1,8 +1,14 @@
 .mainContainer {
-    background-color: #3c4350;
+    background-color: #1348aa;
     width: 90%;
     height: 100%;
     /* height: 130px; */
     flex-grow: 1;
     display: flex;
+}
+
+.body {
+    background-color: rgb(212, 212, 212);
+    width: 100%;
+    /* height: 100%; */
 }

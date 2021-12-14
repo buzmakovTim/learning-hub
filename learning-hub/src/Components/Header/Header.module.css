@@ -10,6 +10,12 @@
     justify-content: space-between;
 }
 .nav {
-    background-color: azure;
+    background-color: rgb(196, 196, 196);
     color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* height: 50%; */
 }

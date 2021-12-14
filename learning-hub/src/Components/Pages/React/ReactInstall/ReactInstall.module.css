@@ -1,0 +1,19 @@
+.mainContainer {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.line {
+    height: 1px;
+    width: 70%;
+    background-color: rgb(95, 94, 94);
+}
+.paragraph {
+    width: 80%;
+    text-align: left;
+}
+.spanColorOrange {
+    color: rgb(214, 140, 3);
+}

@@ -15,8 +15,11 @@ export const Header = () => {
             <NavLink to="/" >
                 Home
             </NavLink>
-            <NavLink to="/about" >
-                About
+            <NavLink to="/react" >
+                React
+            </NavLink>
+            <NavLink to="/react" >
+                Git
             </NavLink>
 
         </div>
