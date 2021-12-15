@@ -1,19 +1,18 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import classes from './ReactInstall.module.css'
+import stylingClasses from './../../../../CSS/Styles.module.css'
 
 
 export const ReactInstall = () => {
 
 
-    return <div className={classes.mainContainer}>
+    return <div className={stylingClasses.mainContainer}>
             
             <h3>
             About React
             </h3>            
-            <div className={classes.line}></div>
+            <div className={stylingClasses.line}></div>
 
-            <div className={classes.paragraph}>
+            <div className={stylingClasses.paragraph}>
                 <p><b><a href='https://en.wikipedia.org/wiki/React_(JavaScript_library)' target={'blank'}>React</a></b> is a free and open-source front-end JavaScript library for 
                     building user interfaces based on UI components. It is maintained 
                     by Meta and a community of individual developers and companies. 
@@ -42,9 +41,52 @@ export const ReactInstall = () => {
             <h3>
             Create a New React App
             </h3>
-            <div className={classes.line}></div>
-            <div className={classes.paragraph}>
-                <p>If we use <b>yarn</b>: <span className={classes.spanColorOrange}>yarn create-react-app my-app</span></p>
+            <div className={stylingClasses.line}></div>
+            <div className={stylingClasses.paragraph}>
+                
+
+                <p>For using <b><a href='https://yarnpkg.com/getting-started' target='blank'>Yarn</a></b></p>
+
+                <div className={stylingClasses.codingPart}>
+                    <span>yarn create-react-app my-app</span> 
+                    <br/>
+                    <span>cd my-app</span>
+                    <br/>
+                    <span>yarn start</span>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}>For Typescript</span>
+                    <br/>
+                    <br/>
+                    <span>yarn create-react-app my-app --template typescript</span>
+                </div>
+                
+                <br/>
+                <p>For using <b>Npx</b></p>
+
+                <div className={stylingClasses.codingPart}>
+                    <span>npx create-react-app my-app</span> 
+                    <br/>
+                    <span>cd my-app</span>
+                    <br/>
+                    <span>npx start</span>
+
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}>For Typescript</span>
+                    <br/>
+                    <br/>
+                    <span>npx create-react-app my-app --template typescript</span>
+                </div>
+
+
+
+            <br/>
+            <br/>
+            <br/>
             </div>
     
     </div>

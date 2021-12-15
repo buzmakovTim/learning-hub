@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
 }
+
 .line {
     height: 1px;
     width: 70%;
@@ -16,4 +17,11 @@
 }
 .spanColorOrange {
     color: rgb(214, 140, 3);
+}
+.codingPart {
+    padding: 15px 30px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 10px;
+    font-family: 'Rubik', sans-serif;
 }

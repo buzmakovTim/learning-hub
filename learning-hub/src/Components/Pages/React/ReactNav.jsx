@@ -5,7 +5,7 @@ export const ReactNav = () => {
 
     return <div>
 
-        React Component
+        <h3>React Tutorial</h3>
 
 
         
@@ -18,8 +18,8 @@ export const ReactNav = () => {
             </p>
             
             <p>
-            <NavLink to="/react/other" >
-                React Other
+            <NavLink to="/react/component" >
+                React Component
             </NavLink>
             </p>
         

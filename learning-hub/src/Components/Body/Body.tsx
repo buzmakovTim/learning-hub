@@ -11,7 +11,7 @@ export const Body = () => {
     return <div className={classes.mainContainer}>
 
         {/* Sidebar */}
-        <div>
+        <div className={classes.sidebar}>
             <Sidebar/>
         </div>
 

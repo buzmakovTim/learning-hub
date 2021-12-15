@@ -7,6 +7,19 @@
     display: flex;
 }
 
+.sidebar {
+    width: 25%;
+    color: white;
+}
+.sidebar a {
+    width: 25%;
+    color: white;
+}
+.sidebar a:hover {
+    width: 25%;
+    color: rgb(243, 170, 170);
+}
+
 .body {
     background-color: rgb(212, 212, 212);
     width: 100%;

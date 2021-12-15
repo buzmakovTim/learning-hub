@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { ReactInstall } from './ReactInstall/ReactInstall'
-import { ReactOther } from './ReactOther/ReactIOther'
+import { ReactComponent } from './ReactComponent/ReactComponent'
 import classes from './ReactContainer.module.css'
 
 export const ReactContainer = () => {
@@ -15,7 +15,7 @@ export const ReactContainer = () => {
 
         <Routes>
                 <Route path='/install' element={<ReactInstall/>}/>
-                <Route path='/other' element={<ReactOther/>}/>             
+                <Route path='/component' element={<ReactComponent/>}/>             
         </Routes>
 
 

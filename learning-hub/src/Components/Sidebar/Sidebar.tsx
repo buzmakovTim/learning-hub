@@ -9,8 +9,6 @@ export const Sidebar = () => {
 
     return <div className={classes.mainContainer}>
             
-            SideBar
-            
             <Routes>
     
                 <Route path='/react/*' element={<ReactNav/>}/>
