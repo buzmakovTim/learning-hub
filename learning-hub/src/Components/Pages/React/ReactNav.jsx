@@ -22,6 +22,12 @@ export const ReactNav = () => {
                 React Component
             </NavLink>
             </p>
+
+            <p>
+            <NavLink to="/react/hooks" >
+                React Hooks
+            </NavLink>
+            </p>
         
         </div>
         
