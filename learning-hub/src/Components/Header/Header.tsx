@@ -12,15 +12,24 @@ export const Header = () => {
         <div className={classes.nav}>
 
 
-            <NavLink to="/" >
-                Home
-            </NavLink>
-            <NavLink to="/react" >
-                React
-            </NavLink>
-            <NavLink to="/react" >
-                Git
-            </NavLink>
+            <div className={classes.navBox}>
+                <NavLink to="/" >
+                    Home
+                </NavLink>
+            </div>
+            
+            <div>
+                <NavLink to="/react" >
+                    React
+                </NavLink>
+            </div>
+            
+            <div>
+                <NavLink to="/react" >
+                    Git
+                </NavLink>
+            </div>
+            
 
         </div>
     </div>
