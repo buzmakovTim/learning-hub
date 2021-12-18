@@ -36,3 +36,14 @@
     border-radius: 10px;
     width: 90%;
 }
+
+table {
+    padding: 10px;
+    background-color: rgb(75, 105, 139);
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+}
+.blue {
+    color: rgb(163, 189, 219);
+}
