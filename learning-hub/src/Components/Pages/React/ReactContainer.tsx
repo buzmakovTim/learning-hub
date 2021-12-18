@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { ReactInstall } from './ReactInstall/ReactInstall'
 import { ReactComponent } from './ReactComponent/ReactComponent'
-import classes from './ReactContainer.module.css'
+import classes from './../Container.module.css'
 import { ReactHooks } from './ReactHooks/ReactHooks'
 
 export const ReactContainer = () => {

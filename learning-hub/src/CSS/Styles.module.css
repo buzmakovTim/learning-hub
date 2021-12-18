@@ -25,3 +25,14 @@
     border-radius: 10px;
     font-family: 'Rubik', sans-serif;
 }
+.imageMid {
+    /* background-color: blue; */
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
+}
+.imageMid img {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    width: 90%;
+}

@@ -25,7 +25,7 @@ export const Header = () => {
             </div>
             
             <div>
-                <NavLink to="/react" >
+                <NavLink to="/git" >
                     Git
                 </NavLink>
             </div>
