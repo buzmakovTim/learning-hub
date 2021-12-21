@@ -4,6 +4,7 @@ import { ReactInstall } from './ReactInstall/ReactInstall'
 import { ReactComponent } from './ReactComponent/ReactComponent'
 import classes from './../Container.module.css'
 import { ReactHooks } from './ReactHooks/ReactHooks'
+import { ReactRouterDom } from './ReactRouterDom/ReactRouterDom'
 
 export const ReactContainer = () => {
 
@@ -17,7 +18,8 @@ export const ReactContainer = () => {
         <Routes>
                 <Route path='/install' element={<ReactInstall/>}/>
                 <Route path='/component' element={<ReactComponent/>}/>
-                <Route path='/hooks' element={<ReactHooks/>}/>               
+                <Route path='/hooks' element={<ReactHooks/>}/> 
+                <Route path='/routerDom' element={<ReactRouterDom/>}/>               
         </Routes>
 
 

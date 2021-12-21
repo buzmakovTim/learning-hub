@@ -10,15 +10,38 @@
     justify-content: space-between;
 }
 .nav {
-    background-color: rgb(196, 196, 196);
-    color: black;
-    height: 30px;
+    /* background-color: rgb(196, 196, 196); */
+    color: rgb(233, 233, 233);
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
     /* height: 50%; */
 }
-.navBox {
-    /* background-color: blue; */
+.nav a {
+    /* background-color: rgb(196, 196, 196); */
+    color: rgb(233, 233, 233);
+}
+.nav a:hover {
+    /* margin: 10px; */
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51, 68, 167, 0.287);
+}
+.active {
+    color: brown;
+    /* margin: 10px; */
+    padding: 5px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(51, 69, 167);
 }

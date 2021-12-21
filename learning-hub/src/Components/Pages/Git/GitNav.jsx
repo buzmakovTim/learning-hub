@@ -1,5 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import classes from './../../Pages/Container.module.css'
+
 
 export const GitNav = () => {
 
@@ -12,13 +14,13 @@ export const GitNav = () => {
         {/* NavLinks */}
         <div>
             <p>
-            <NavLink to="/git/about" >
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/git/about" >
                 Git About
             </NavLink>
             </p>
             
             <p>
-            <NavLink to="/git/commands" >
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/git/commands" >
                 Git Commands
             </NavLink>
             </p>

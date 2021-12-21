@@ -12,20 +12,20 @@ export const Header = () => {
         <div className={classes.nav}>
 
 
-            <div className={classes.navBox}>
-                <NavLink to="/" >
+            <div>
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/" >
                     Home
                 </NavLink>
             </div>
             
             <div>
-                <NavLink to="/react" >
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/react" >
                     React
                 </NavLink>
             </div>
             
             <div>
-                <NavLink to="/git" >
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/git" >
                     Git
                 </NavLink>
             </div>
