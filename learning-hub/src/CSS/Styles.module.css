@@ -24,6 +24,8 @@
     color: white;
     border-radius: 10px;
     font-family: 'Rubik', sans-serif;
+    width: 70%;
+    margin: 0 auto;
 }
 .imageMid {
     /* background-color: blue; */
@@ -46,4 +48,27 @@ table {
 }
 .blue {
     color: rgb(163, 189, 219);
+}
+button {
+    background-color: rgb(48, 75, 149);
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: rgb(64, 93, 173);
+    border: none;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:active {
+    background-color: rgb(29, 58, 138);
+    border: none;
+    padding: 8px;
+    color: rgb(202, 67, 67);
+    border-radius: 5px;
+    cursor: pointer;
 }

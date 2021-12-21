@@ -35,6 +35,12 @@ export const ReactNav = () => {
                 React Router DOM
             </NavLink>
             </p>
+
+            <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/other" >
+                React Other
+            </NavLink>
+            </p>
         
         </div>
         
