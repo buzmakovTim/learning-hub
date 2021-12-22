@@ -115,6 +115,8 @@ export const ReactHooks = () => {
             {/* Paragraph Part */}
             <div className={stylingClasses.paragraph}>
 
+                <p><b>useEffect</b> - it’s a function which takes two parameters: <b>callBack</b> and <b>array of dependencies</b></p>    
+
                 <p>You’ve likely performed data fetching, subscriptions, or manually changing the DOM from React components before. 
                     We call these operations “side effects” (or “effects” for short) because they can affect other components and can’t 
                     be done during rendering.</p>
@@ -133,22 +135,51 @@ export const ReactHooks = () => {
                     <br/>
                     <span>function <b>Example ( )  &#123; </b></span>
                     <br/>
-                    <span><i>&ensp; &ensp;  &#47;&#47; Declare a new state variable, which we'will call "count"</i></span>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp;  &#47;&#47; Declare a new state variable, which we'will call "count"</i></span>
                     <br/>
                     <span> &ensp; &ensp; const [ <b>count, setState</b> ] = <b>useSatate(0) ;</b>  </span> 
                     <br/>
                     <br/>
-                    <span><i>&ensp; &ensp; &#47;&#47; Similar to componentDidMount and componentDidUpdate:</i></span>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &#47;&#47; Similar to componentDidMount and componentDidUpdate:</i></span>
                     <br/> 
                     <b>
                     <span> &ensp; &ensp; useEffect ( ( ) =&#62; &#123;</span> 
                     <br/>
-                    <span><i>&ensp; &ensp; &ensp; &ensp; &#47;&#47; Update the document title using the browser API</i></span>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &ensp; &ensp; &#47;&#47; Update the document title using the browser API</i></span>
                     <br/> 
                     <span> &ensp; &ensp; &ensp; &ensp; document.title = `You clicked $&#123;count&#125; times`;</span> 
                     <br/> 
-                    <span> &ensp; &ensp;  &#125; ) ;</span> 
+                    <span> &ensp; &ensp;  &#125; ) ; <span className={stylingClasses.spanColorOrange}>IMPORTANT! will run EVERY time when component renders </span></span> 
                     </b>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &#47;&#47; Similar to componentDidMount and componentDidUpdate:</i></span>
+                    <br/> 
+                    <b>
+                    <span> &ensp; &ensp; useEffect ( ( ) =&#62; &#123;</span> 
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &ensp; &ensp; &#47;&#47; Update the document title using the browser API</i></span>
+                    <br/> 
+                    <span> &ensp; &ensp; &ensp; &ensp; document.title = `You clicked $&#123;count&#125; times`;</span> 
+                    <br/> 
+                    <span> &ensp; &ensp;  &#125;, [] ) ; <span className={stylingClasses.spanColorOrange}>IMPORTANT! will run ONCE only when component renders </span></span> 
+                    </b>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &#47;&#47; Similar to componentDidMount and componentDidUpdate:</i></span>
+                    <br/> 
+                    <b>
+                    <span> &ensp; &ensp; useEffect ( ( ) =&#62; &#123;</span> 
+                    <br/>
+                    <span className={stylingClasses.spanColorOrange}><i>&ensp; &ensp; &ensp; &ensp; &#47;&#47; Update the document title using the browser API</i></span>
+                    <br/> 
+                    <span> &ensp; &ensp; &ensp; &ensp; document.title = `You clicked $&#123;count&#125; times`;</span> 
+                    <br/> 
+                    <span> &ensp; &ensp;  &#125;, [counter]) ; <span className={stylingClasses.spanColorOrange}>IMPORTANT! will run EVERY time COUNTER changed only when component renders </span></span> 
+                    </b>
+                    <br/>
                     <br/>
                     <br/>
                     <span> &ensp; &ensp; return (  </span>

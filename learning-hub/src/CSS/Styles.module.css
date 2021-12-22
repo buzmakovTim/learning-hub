@@ -38,6 +38,14 @@
     border-radius: 10px;
     width: 90%;
 }
+.note {
+    background-color: rgba(247, 225, 126, 0.767);
+    min-width: 50%;
+    border-left: 20px solid rgb(190, 188, 58);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
 
 table {
     padding: 10px;

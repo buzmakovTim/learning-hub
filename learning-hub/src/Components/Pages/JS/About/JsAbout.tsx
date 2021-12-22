@@ -4,20 +4,23 @@ import {v1} from 'uuid'
 
 
 
-export const ReactOther = () => {
+export const JsAbout = () => {
 
     const [id, setId] = useState('0')
 
     return <div className={stylingClasses.mainContainer}>
             
             <h3>
-            React Other
+                JavaScript About
             </h3>            
             <div className={stylingClasses.line}></div>
 
             <div className={stylingClasses.paragraph}>
                 
-                <h3>Here will be some other notes regarding react</h3>
+                <p><b><a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a></b>, often abbreviated <b>JS</b>, is a programming language that is one of the core 
+                technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client 
+                side for web page behavior, often incorporating third-party libraries. All major web browsers have a dedicated 
+                JavaScript engine to execute the code on the user's device</p>
 
             </div>
 

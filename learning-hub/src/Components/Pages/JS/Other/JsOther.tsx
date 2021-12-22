@@ -4,14 +4,14 @@ import {v1} from 'uuid'
 
 
 
-export const ReactOther = () => {
+export const JsOther = () => {
 
     const [id, setId] = useState('0')
 
     return <div className={stylingClasses.mainContainer}>
             
             <h3>
-            React Other
+            JavaScript Other
             </h3>            
             <div className={stylingClasses.line}></div>
 
