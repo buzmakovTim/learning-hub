@@ -51,6 +51,26 @@ export const JsPromise = () => {
                     <li><i><b>rejected :</b></i> meaning that the operation failed.</li>
                 </ul>
 
+                {/* Let's create a promise
+
+                    let p = new Promise((resolve, reject) => {
+                        let a = 1 + 1
+                        if(a == 2){
+                            resolve('Success')
+                        }else{
+                            reject('Failed')
+                        }
+                    })
+                
+                    p.then((message) => {
+                        console.log('This is in then' + message)
+                    }).catch((message) => {
+                        console.log('This is in catch' + message)
+                    })
+
+
+                */}
+
             </div>
 
 

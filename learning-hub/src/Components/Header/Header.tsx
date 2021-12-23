@@ -13,14 +13,16 @@ export const Header = () => {
                 
                 let latitude = position.coords.latitude
                 let longitude = position.coords.longitude
-
+ 
+                // API request. Response as Jason. RETURNING PROMISE
                 fetch("https://api.bigdatacloud.net/data/reverse-geocode-client?latitude="+ latitude + "&longitude="+ longitude +"&localityLanguage=en")
                 .then( res => res.json())
                 .then( (data) => {
-                    console.log(data)
-                    
+                    // console.log(data)
                     setLocation(data.city + " - " + data.countryCode)
-                })         
+                }).catch((rej) => {
+
+                })          
 
             });
     });
