@@ -2,6 +2,21 @@ import React, {useEffect, useState} from 'react'
 import stylingClasses from './../../../../CSS/Styles.module.css'
 import {v1} from 'uuid'
 
+//  {    &#123;
+//  }    &#125;
+//  [    &#91;
+//  ]    &#93;
+//  '    &#39;
+//  <    &#60;
+//  >    &#62;
+//  ,    &#44;
+//  .    &#46;
+//  =    &#61;
+//  "    &#34;
+//  ;    &#59;
+//  :    &#58;
+//  /    &#47;
+// tab   &ensp; 
 
 
 export const JsAbout = () => {
@@ -42,78 +57,52 @@ export const JsAbout = () => {
             
                 
             
-            <h3>UUID</h3>
+            <h3>JavaScript data types and data structures</h3>
             <div className={stylingClasses.line}></div>
 
             <div className={stylingClasses.paragraph}>
                 
-                <p><b><a href="https://www.npmjs.com/package/react-uuid" target="_blank">UUID</a></b> - A UUID (Universal Unique Identifier) is a 128-bit number used to 
-                uniquely identify some object or entity on the Internet. Depending on the specific mechanisms used, a UUID is either guaranteed to be different or is, 
-                at least, extremely likely to be different from any other UUID generated until 3400 A.D. </p>
-                
-                <p><b>Install</b></p>
-                {/* CODING */}
-                <div className={stylingClasses.codingPart}>
-                    <span>yarn add uuid</span> 
-                    <br/>
-                    <br/>
-                    <span className={stylingClasses.spanColorOrange}>For Typescript</span>
-                    <br/>
-                    <br/>
-                    <span>yarn add @types/uuid</span> 
-                    <br/>
-                </div>
-
-                <p><b>Using</b></p>
-                {/* CODING */}
-                <div className={stylingClasses.codingPart}>
-                    <span>import &#123; v1 &#125; from 'uuid'</span> 
-                    <br/>
-                </div>
-
-                <p>Generating new UUID every time you click on the Button</p>
-                <button onClick={() => setId(v1())}>Generate ID</button> <span> - ID is: {id}</span>
+            <h4>Dynamic Type</h4>
+            <p>JavaScript is a <i>loosely typed</i> and <i>dynamic</i> language. Variables in JavaScript are not directly associated 
+                with any particular value type, and any variable can be assigned (and re-assigned) values of all types:</p>
 
             </div>    
                    
-                <br/>
-                <br/>
-                <br/>
-                
-
                 {/* NOTE */}
                 <div className={stylingClasses.note}>
-                    <span>Avoiding Type checking in <b>.tsx</b> files</span>
-                    <br/>
-                    <br/>
-                    <span><b>//@ts-ignore</b></span>
+                    <span><b>let foo = 42 ;</b>   <i>// foo is now a number</i></span><br/>
+                    <span><b>&ensp; &ensp;foo = 'bar' ;</b>   <i>// foo is now a string</i></span><br/>
+                    <span><b>&ensp; &ensp;foo = true ;</b>   <i>// foo is now a boolean</i></span><br/>
+                    
                 </div>
+            
 
-            <br/>
-            <br/>
-            <br/>
-            <h3>Add to GitHub Pages</h3>
-            <div className={stylingClasses.line}></div>
-            <br/>
-            {/* CODING */}
             <div className={stylingClasses.paragraph}>
-                    <ol>
-                        <li>In terminal - <b>yarn add gh-pages –dev</b></li>
-                        <li>Add homepage to <b>pakage.json</b> file <br/>
-                            <i>&#123; <br/>
-                            "name" : "learningHub",<br/>
-                            <b>"homepage" : "https://buzmakovTim.github.io/learningHub"<br/></b>
-                            "version" : "0.1.0"<br/>
-                            &#125;</i>
-                        </li>
-                        <li>Add under the scripts to <b>pakage.json</b> file <br/>
-                            <i>"predeploy" : "npm run build",<br/>
-                            "deploy" : "gh-pages -d build"<br/></i>
-                        </li>
-                        <li>And after every commit push we need to run <b>yarn deploy</b></li>
-                    </ol>
-            </div>
+                
+            <h4>JavaScript types</h4>
 
+                <ul>
+                    <li>
+                            <span><b><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#primitive_values" target="_blank">Primitive values</a></b></span>
+                        <ol>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#boolean_type" target="_blank">Boolean</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#null_type" target="_blank">Null</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#undefined_type" target="_blank">Undefined</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#number_type" target="_blank">Number</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type" target="_blank">BigInt</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#string_type" target="_blank">String</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#symbol_type" target="_blank">Symbol</a></li>
+                        </ol>
+                    </li>
+                    <li>
+                            <span><b><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#objects" target="_blank">Objects</a></b></span>
+                    </li>
+
+
+                </ul>
+                
+                
+            </div>
 
 
             <br/>

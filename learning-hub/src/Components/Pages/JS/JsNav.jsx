@@ -25,6 +25,12 @@ export const JsNav = () => {
             </NavLink>
             </p>
 
+            <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/promise" >
+                JavaScript Promise
+            </NavLink>
+            </p>
+
         
         </div>
         
