@@ -21,7 +21,7 @@ export const Header = () => {
                     // console.log(data)
                     setLocation(data.city + " - " + data.countryCode)
                 }).catch((rej) => {
-
+                    alert('Location API failed ' + rej)
                 })          
 
             });
