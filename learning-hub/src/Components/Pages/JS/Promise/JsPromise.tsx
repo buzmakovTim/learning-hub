@@ -21,7 +21,28 @@ import {v1} from 'uuid'
 
 export const JsPromise = () => {
 
-    const [id, setId] = useState('0')
+    const[userLeft, setUserLeft] = useState(false)
+    const[userNotLiking, setUserNotLiking] = useState(false);
+    const[message, setMessage] = useState('message will be here after pressing the button');
+    
+    // Function USING promise
+function watchInstaReelsPromise() {
+        return new Promise ((resolve, reject) => {
+            if (userLeft) {
+                reject({
+                    name : 'User left' ,
+                    message : ':('
+                })
+        } else if (userNotLiking) {
+                reject({
+                    name : 'User not commenting and liking' ,
+                    message : 'Very bad :('
+        })
+        } else {
+                resolve ( 'Like and Subscribe! :)' )
+        }
+    })
+}
 
     return <div className={stylingClasses.mainContainer}>
             
@@ -90,15 +111,161 @@ export const JsPromise = () => {
                     <br/>
 
                 </div>
-                
+            
+
+
+             {/* CODING */}
+             <br/>
+                <br/>
+                <p><b>Converting CallBack function to Promise</b></p>
+                <div className={stylingClasses.codingPart}>
+                    <span>let <b>userLeft</b> = false</span>
+                    <br/>
+                    <span>let <b>userNotLiking</b> = false</span>
+                    <br/>
+                    <br/>
+                    <span>function <b>watchInstaReels</b>( ( <b>callBack, errorCallBack</b> ) =&#62; &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;if ( userLeft ) &#123;</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;<b>errorCallBack ( &#123;</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>name</b> : 'User left' ,</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>message</b> : ':('</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;<b>&#125; )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&#125; else if ( userNotLiking ) &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;<b>errorCallBack ( &#123;</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>name</b> : 'User not commenting and liking' ,</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>message</b> : 'Very bad :('</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;<b>&#125; )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&#125; else &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;<b>callBack ( 'Like and Subscribe! :)' )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&#125;</span> 
+                    <br/>
+                    <span>&#125;</span> 
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/> 
+                    <span><i>// Calling <b>watchInstaReels</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
+                    <br/>
+                    <br/>
+                    <span><b>watchInstaReels</b>( ( <b>message</b> ) =&#62; &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;console.log( 'Success: ' + <b>message</b> )</span> 
+                    <br/>
+                    <span>&#125;, ( <b>error</b> )  =&#62; &#123;</span> 
+                    <br/>
+                    <span>&ensp;&ensp;console.log( error.name + ' ' + error.message )</span> 
+                    <br/>
+                    <span>&#125; )</span>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    {/* NOW THIS FUNCTION WILL BE CONVERTED USING THE PROMISE */}
+                    <span>========================</span>
+                    <br/>
+                    <span>NOW THIS FUNCTION WILL BE CONVERTED USING THE PROMISE</span>
+                    <br/>
+                    <span>========================</span>
+                    <br/>
+                    <br/>
+                    <span>function <b>watchInstaReelsPromise</b>( ) &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;<b>return</b> new <b>Promise</b> ( (resolve, reject ) =&#62; &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;if ( userLeft ) &#123;</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>reject ( &#123;</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>name</b> : 'User left' ,</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>message</b> : ':('</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>&#125; )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#125; else if ( userNotLiking ) &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>reject ( &#123;</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>name</b> : 'User not commenting and liking' ,</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>message</b> : 'Very bad :('</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>&#125; )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#125; else &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<b>resolve ( 'Like and Subscribe! :)' )</b></span> 
+                    <br/>
+                    <span>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#125;</span> 
+                    <br/>
+                    <span>&ensp;&ensp;&#125; )</span> 
+                    <br/>
+                    <span>&#125;</span> 
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/> 
+                    <span><i>// Calling <b>watchInstaReelsPromise</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
+                    <br/>
+                    <br/>
+                    <span><b>watchInstaReelsPromise( )</b>.then( ( <b>message</b> ) =&#62; &#123; </span> 
+                    <br/>
+                    <span>&ensp;&ensp;console.log( 'Success: ' + <b>message</b> )</span> 
+                    <br/>
+                    <span>&#125; ).catch( ( <b>error</b> )  =&#62; &#123;</span> 
+                    <br/>
+                    <span>&ensp;&ensp;console.log( error.name + ' ' + error.message )</span> 
+                    <br/>
+                    <span>&#125; )</span>
+                    <br/>
+
+                </div>
+
+            </div>
+            
+            <p><b>How this code works</b></p>
+            
+            <div className={stylingClasses.paragraph}>
+            
+            <span> <button onClick={() => setUserLeft(!userLeft)}>userLeft</button> let<b> userLeft = </b></span> {userLeft ? 'true' : 'false'}
+            <br/>
+            <br/>
+            <span> <button onClick={() => setUserNotLiking(!userNotLiking)}>userNotLiking</button> let<b> userNotLiking = </b></span> {userNotLiking ? 'true' : 'false'}
+            <br/>
+            <br/>
+            <button onClick={() => watchInstaReelsPromise().then( (message) => {
+                setMessage('Success: ' + message)
+            }).catch( (error) => {
+                setMessage(error.name + ' ' + error.message)
+            })
+            
+            }>RUN PROMIS FUNCTION</button> <span><b> - {message}</b></span>
+
 
             </div>
 
 
-            
+            <br/>
+            <br/>
+            <br/>
                 {/* NOTE */}
                 <div className={stylingClasses.note}>
-                    <span>Avoiding Type checking in <b>.tsx</b> files</span>
+                    <span><b>NOTE</b></span>
                     <br/>
                     <br/>
                     <span><b>//@ts-ignore</b></span>
