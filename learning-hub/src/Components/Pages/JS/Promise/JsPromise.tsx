@@ -22,8 +22,10 @@ import {v1} from 'uuid'
 export const JsPromise = () => {
 
     const[userLeft, setUserLeft] = useState(false)
-    const[userNotLiking, setUserNotLiking] = useState(false);
-    const[message, setMessage] = useState('message will be here after pressing the button');
+    const[userNotLiking, setUserNotLiking] = useState(false)
+    const[message, setMessage] = useState('message will be here after pressing the button')
+    const[allPromiseResolved, setAllPromiseResolved] = useState('---')
+    const[onePromiseResolved, setOnePromiseResolved] = useState('---')
     
     // Function USING promise
 function watchInstaReelsPromise() {
@@ -43,6 +45,28 @@ function watchInstaReelsPromise() {
         }
     })
 }
+//@ts-ignore
+//setTimeout(() => console.log(' Promise 1 resolved! '), 15000)
+
+// For Promise.all() and Promise.race() functions
+
+const p1 = new Promise((resolve, reject) => {
+    
+    //@ts-ignore
+    setTimeout(() => resolve(' Promise 1 resolved! '), 3000)
+})
+const p2 = new Promise((resolve, reject) => {
+    //@ts-ignore
+    setTimeout(() => resolve(' Promise 2 resolved! '), 5000)
+})
+const p3 = new Promise((resolve, reject) => {
+    //@ts-ignore
+    setTimeout(() => resolve(' Promise 3 resolved! '), 1000)
+})
+
+
+
+
 
     return <div className={stylingClasses.mainContainer}>
             
@@ -96,7 +120,7 @@ function watchInstaReelsPromise() {
                     <br/>
                     <br/>
                     
-                    <span><i>// This promise ALWAYS gonna be resolved as 1 + 1 always 2</i></span>
+                    <span className={stylingClasses.spanColorOrange}><i>// This promise ALWAYS gonna be resolved as 1 + 1 always 2</i></span>
                     <br/>
                     <br/>
                     <br/>
@@ -157,7 +181,7 @@ function watchInstaReelsPromise() {
                     <br/>
                     <br/>
                     <br/> 
-                    <span><i>// Calling <b>watchInstaReels</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
+                    <span className={stylingClasses.spanColorOrange}><i>// Calling <b>watchInstaReels</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
                     <br/>
                     <br/>
                     <span><b>watchInstaReels</b>( ( <b>message</b> ) =&#62; &#123; </span> 
@@ -178,7 +202,7 @@ function watchInstaReelsPromise() {
                     {/* NOW THIS FUNCTION WILL BE CONVERTED USING THE PROMISE */}
                     <span>========================</span>
                     <br/>
-                    <span>NOW THIS FUNCTION WILL BE CONVERTED USING THE PROMISE</span>
+                    <span className={stylingClasses.spanColorOrange}>NOW THIS FUNCTION WILL BE CONVERTED USING THE PROMISE</span>
                     <br/>
                     <span>========================</span>
                     <br/>
@@ -220,7 +244,7 @@ function watchInstaReelsPromise() {
                     <br/>
                     <br/>
                     <br/> 
-                    <span><i>// Calling <b>watchInstaReelsPromise</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
+                    <span className={stylingClasses.spanColorOrange}><i>// Calling <b>watchInstaReelsPromise</b> function ( and passing two callBack functions <b>message</b> and <b>error</b>) </i></span> 
                     <br/>
                     <br/>
                     <span><b>watchInstaReelsPromise( )</b>.then( ( <b>message</b> ) =&#62; &#123; </span> 
@@ -242,26 +266,25 @@ function watchInstaReelsPromise() {
             
             <div className={stylingClasses.paragraph}>
             
-            <span> <button onClick={() => setUserLeft(!userLeft)}>userLeft</button> let<b> userLeft = </b></span> {userLeft ? 'true' : 'false'}
-            <br/>
-            <br/>
-            <span> <button onClick={() => setUserNotLiking(!userNotLiking)}>userNotLiking</button> let<b> userNotLiking = </b></span> {userNotLiking ? 'true' : 'false'}
-            <br/>
-            <br/>
-            <button onClick={() => watchInstaReelsPromise().then( (message) => {
-                setMessage('Success: ' + message)
-            }).catch( (error) => {
-                setMessage(error.name + ' ' + error.message)
-            })
-            
-            }>RUN PROMISE FUNCTION</button> <span><b> - {message}</b></span>
-
+                <span> <button onClick={() => setUserLeft(!userLeft)}>userLeft</button> let<b> userLeft = </b></span> {userLeft ? 'true' : 'false'}
+                <br/>
+                <br/>
+                <span> <button onClick={() => setUserNotLiking(!userNotLiking)}>userNotLiking</button> let<b> userNotLiking = </b></span> {userNotLiking ? 'true' : 'false'}
+                <br/>
+                <br/>
+                <button onClick={() => watchInstaReelsPromise().then( (message) => {
+                    setMessage('Success: ' + message)
+                }).catch( (error) => {
+                    setMessage(error.name + ' ' + error.message)
+                })
+                
+                }>RUN PROMISE FUNCTION</button> <span><b> - {message}</b></span>
 
             </div>
 
             <br/>
             <br/>
-            <p><b>Promise.all ( ) </b></p>
+            <p><b>Promise.all ( )</b>  and  <b>Promise.race ( ) </b></p>
             
              {/* CODING */}
              
@@ -290,9 +313,11 @@ function watchInstaReelsPromise() {
                         <br/>
                         <br/>
 
-
-                        <span><i>// Now we gonna use Promise.all()</i></span>
+                        <span>==============================================</span>
                         <br/>
+                        <span className={stylingClasses.spanColorOrange}><i>// Now we gonna use Promise.all()</i></span>
+                        <br/>
+                        <span className={stylingClasses.spanColorOrange}><i>// Waits till all promises are resolved and then <b>return</b></i></span>
                         <br/>
                         <br/>
 
@@ -304,8 +329,54 @@ function watchInstaReelsPromise() {
                         <br/>
                         <span>&#125; )</span> 
                         <br/>
+                        <br/>
+                        <span>==============================================</span>
+                        <br/>
+                        <span className={stylingClasses.spanColorOrange}><i>// Now we gonna use Promise.race()</i></span>
+                        <br/>
+                        <span className={stylingClasses.spanColorOrange}><i>// Waits till first promise is resolved and then <b>return</b></i></span>
+                        <br/>
+                        <br/>
+                        <span>Promise.<b>race</b> ( [ p1, p2, p3 ] )</span> 
+                        <br/>
+                        <span>.<b>then</b>( ( message ) =&#62; &#123; </span> <span className={stylingClasses.spanColorOrange}><i>  // returns single message</i></span>
+                        <br/>
+                        <span>&ensp;&ensp;console.log( messages )</span> 
+                        <br/>
+                        <span>&#125; )</span> 
+                        <br/>
+                        <br/>
+
                     </div>
                 </div>
+
+
+            <p><b>How this code works</b></p>
+            
+            <div className={stylingClasses.paragraph}>
+            
+                
+                <button onClick={() => Promise.all([p1, p2, p3]).then( (messages) => {
+                    setAllPromiseResolved(messages.toString())
+                    //console.log(messages)
+                })
+                
+                }>PROMISE ALL</button> <span><b> - {allPromiseResolved}</b></span>
+
+                <br/>
+                <br/>
+
+                <button onClick={() => Promise.race([p1, p2, p3]).then( (message) => {
+                    //@ts-ignore
+                    setOnePromiseResolved(message)
+                    //console.log(message)
+                })
+                
+                }>PROMISE RACE</button> <span><b> - {onePromiseResolved}</b></span>
+
+            </div>
+
+
             <br/>
             <br/>
                 {/* NOTE */}
