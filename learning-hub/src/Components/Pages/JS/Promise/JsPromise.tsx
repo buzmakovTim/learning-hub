@@ -254,13 +254,58 @@ function watchInstaReelsPromise() {
                 setMessage(error.name + ' ' + error.message)
             })
             
-            }>RUN PROMIS FUNCTION</button> <span><b> - {message}</b></span>
+            }>RUN PROMISE FUNCTION</button> <span><b> - {message}</b></span>
 
 
             </div>
 
-
             <br/>
+            <br/>
+            <p><b>Promise.all ( ) </b></p>
+            
+             {/* CODING */}
+             
+                
+                <div className={stylingClasses.paragraph}>
+                    <div className={stylingClasses.codingPart}>
+                        <span>const p1 = new <b>Promise</b>( ( <b>resolve, reject</b> ) =&#62; &#123; </span> 
+                        <br/>
+                        <span>&ensp;&ensp;&ensp;&ensp;<b>resolve( " Promise 1 resolved ! " )</b></span> 
+                        <br/>
+                        <span>&#125; )</span> 
+                        <br/>
+                        <br/>
+                        <span>const p2 = new <b>Promise</b>( ( <b>resolve, reject</b> ) =&#62; &#123; </span> 
+                        <br/>
+                        <span>&ensp;&ensp;&ensp;&ensp;<b>resolve( " Promise 2 resolved ! " )</b></span> 
+                        <br/>
+                        <span>&#125; )</span> 
+                        <br/>
+                        <br/>
+                        <span>const p3 = new <b>Promise</b>( ( <b>resolve, reject</b> ) =&#62; &#123; </span> 
+                        <br/>
+                        <span>&ensp;&ensp;&ensp;&ensp;<b>resolve( " Promise 3 resolved ! " )</b></span> 
+                        <br/>
+                        <span>&#125; )</span> 
+                        <br/>
+                        <br/>
+
+
+                        <span><i>// Now we gonna use Promise.all()</i></span>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <span>Promise.<b>all</b> ( [ p1, p2, p3 ] )</span> 
+                        <br/>
+                        <span>.<b>then</b>( ( messages ) =&#62; &#123; </span> 
+                        <br/>
+                        <span>&ensp;&ensp;console.log( messages )</span> 
+                        <br/>
+                        <span>&#125; )</span> 
+                        <br/>
+                    </div>
+                </div>
             <br/>
             <br/>
                 {/* NOTE */}
