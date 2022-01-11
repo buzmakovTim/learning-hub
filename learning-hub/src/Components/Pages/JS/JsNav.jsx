@@ -27,6 +27,12 @@ export const JsNav = () => {
             </p>
 
             <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/asyncAwait" >
+                JavaScript Async Await
+            </NavLink>
+            </p>
+
+            <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/other" >
                 JavaScript Other
             </NavLink>

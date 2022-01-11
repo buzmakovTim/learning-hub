@@ -19,7 +19,7 @@ import {v1} from 'uuid'
 // tab   &ensp; 
 
 
-export const JsPromise = () => {
+export const AsyncAwait = () => {
 
     const[userLeft, setUserLeft] = useState(false)
     const[userNotLiking, setUserNotLiking] = useState(false)
@@ -115,7 +115,7 @@ function promiseRace() {
     return <div className={stylingClasses.mainContainer}>
             
             <h3>
-            JavaScript Promise
+            JavaScript Async Await
             </h3>            
             <div className={stylingClasses.line}></div>
 
