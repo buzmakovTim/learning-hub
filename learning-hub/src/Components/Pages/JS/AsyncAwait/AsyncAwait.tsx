@@ -432,6 +432,59 @@ function promiseRace() {
             <br/>
             <br/>
             
+            {/* 
+            
+                function makeRequest(location){
+                    return new Promise((resolve, reject) => {
+
+                        console.log(`Making request to ${location}`)
+
+                        if(location === "Google"){
+                            resolve('Google Says Hi')
+                        } else {
+                            reject('We can only talk to Google')
+                        }
+                    })
+                }
+
+                function processRequest(response){
+                    return new Promise((resolve, reject) => {
+
+                        console.log('Processing response')
+                        resolve(`Extra information + ${response}`)
+                    })
+                }
+
+                // Using .then nesting 
+
+                makeRequest("Google").then(response =>{
+
+                    console.log('Response received')
+                    return processRequest(response)
+                }).then(processedResponse => {
+                    console.log(processedResponse)
+                }).catch(err => {
+                    console.log(err)
+                })
+
+                // And now we gonna use Async Await for this functions (same result as above)
+
+                async function doAllWork(){
+                    try {
+                        const response = await makeRequest('Google')
+                        console.log('Response received')
+                        const processedResponse = await processRequest(response)
+                        console.log(processedResponse)
+                    }
+                    catch (err) {
+                        console.log(err)
+                    }
+                    
+                }
+
+                doAllWork()
+
+            */}
     
     </div>
 }
