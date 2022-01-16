@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/learning-Hub/static/css/main.f7689877.chunk.css",
-    "main.js": "/learning-Hub/static/js/main.35a6b339.chunk.js",
-    "main.js.map": "/learning-Hub/static/js/main.35a6b339.chunk.js.map",
-    "runtime-main.js": "/learning-Hub/static/js/runtime-main.2658711a.js",
-    "runtime-main.js.map": "/learning-Hub/static/js/runtime-main.2658711a.js.map",
-    "static/js/2.9287f51c.chunk.js": "/learning-Hub/static/js/2.9287f51c.chunk.js",
-    "static/js/2.9287f51c.chunk.js.map": "/learning-Hub/static/js/2.9287f51c.chunk.js.map",
-    "static/js/3.a89c5241.chunk.js": "/learning-Hub/static/js/3.a89c5241.chunk.js",
-    "static/js/3.a89c5241.chunk.js.map": "/learning-Hub/static/js/3.a89c5241.chunk.js.map",
-    "index.html": "/learning-Hub/index.html",
-    "static/css/main.f7689877.chunk.css.map": "/learning-Hub/static/css/main.f7689877.chunk.css.map",
-    "static/js/2.9287f51c.chunk.js.LICENSE.txt": "/learning-Hub/static/js/2.9287f51c.chunk.js.LICENSE.txt",
-    "static/media/git_version.45067833.png": "/learning-Hub/static/media/git_version.45067833.png"
+    "main.css": "/learning-hub/static/css/main.f7689877.chunk.css",
+    "main.js": "/learning-hub/static/js/main.35a6b339.chunk.js",
+    "main.js.map": "/learning-hub/static/js/main.35a6b339.chunk.js.map",
+    "runtime-main.js": "/learning-hub/static/js/runtime-main.33dc378e.js",
+    "runtime-main.js.map": "/learning-hub/static/js/runtime-main.33dc378e.js.map",
+    "static/js/2.9287f51c.chunk.js": "/learning-hub/static/js/2.9287f51c.chunk.js",
+    "static/js/2.9287f51c.chunk.js.map": "/learning-hub/static/js/2.9287f51c.chunk.js.map",
+    "static/js/3.a89c5241.chunk.js": "/learning-hub/static/js/3.a89c5241.chunk.js",
+    "static/js/3.a89c5241.chunk.js.map": "/learning-hub/static/js/3.a89c5241.chunk.js.map",
+    "index.html": "/learning-hub/index.html",
+    "static/css/main.f7689877.chunk.css.map": "/learning-hub/static/css/main.f7689877.chunk.css.map",
+    "static/js/2.9287f51c.chunk.js.LICENSE.txt": "/learning-hub/static/js/2.9287f51c.chunk.js.LICENSE.txt",
+    "static/media/git_version.45067833.png": "/learning-hub/static/media/git_version.45067833.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2658711a.js",
+    "static/js/runtime-main.33dc378e.js",
     "static/js/2.9287f51c.chunk.js",
     "static/css/main.f7689877.chunk.css",
     "static/js/main.35a6b339.chunk.js"
