@@ -20,17 +20,6 @@ function App() {
         {/* Footer */}
         <Footer />
 
-        {/* 
-        
-        
-        
-        
-        Redirect to main page probably
-        
-        
-        
-        */}
-
       </header>
     </div>
   );

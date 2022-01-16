@@ -14,31 +14,37 @@ export const ReactNav = () => {
         <div>
             <p >
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/install" >
-                React Install
+                Install
             </NavLink>
             </p>
             
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/component" >
-                React Component
+                Component
+            </NavLink>
+            </p>
+
+            <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/props" >
+                Props
             </NavLink>
             </p>
 
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/hooks" >
-                React Hooks
+                Hooks
             </NavLink>
             </p>
 
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/routerDom" >
-                React Router DOM
+                Router DOM
             </NavLink>
             </p>
 
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/other" >
-                React Other
+                Other
             </NavLink>
             </p>
         

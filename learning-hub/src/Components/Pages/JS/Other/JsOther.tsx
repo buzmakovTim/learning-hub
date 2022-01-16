@@ -104,8 +104,8 @@ export const JsOther = () => {
                             &#125;</i>
                         </li>
                         <li>Add under the scripts to <b>pakage.json</b> file <br/>
-                            <i>"predeploy" : "npm run build",<br/>
-                            "deploy" : "gh-pages -d build"<br/></i>
+                            <i><b>"predeploy" : "npm run build",<br/>
+                            "deploy" : "gh-pages -d build"<br/></b></i>
                         </li>
                         <li>And after every commit push we need to run <b>yarn deploy</b></li>
                     </ol>

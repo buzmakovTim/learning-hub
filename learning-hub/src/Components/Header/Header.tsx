@@ -56,6 +56,12 @@ export const Header = () => {
             </div>
 
             <div>
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/python" >
+                    Python
+                </NavLink>
+            </div>
+
+            <div>
                 <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/git" >
                     Git
                 </NavLink>

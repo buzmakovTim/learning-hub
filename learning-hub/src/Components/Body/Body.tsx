@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import { ReactContainer } from '../Pages/React/ReactContainer'
 import { GitContainer } from '../Pages/Git/GitContainer'
 import { JsContainer } from '../Pages/JS/JsContainer'
+import { PythonContainer } from '../Pages/Python/PythonContainer'
 
 export const Body = () => {
 
@@ -21,8 +22,9 @@ export const Body = () => {
         <div className={classes.body}>
             <Routes>   
                 <Route path='/react/*' element={<ReactContainer/>}/>
-                <Route path='/git/*' element={<GitContainer/>}/>
                 <Route path='/js/*' element={<JsContainer/>}/>
+                <Route path='/python/*' element={<PythonContainer/>}/>
+                <Route path='/git/*' element={<GitContainer/>}/>
             </Routes>
         </div>
 
