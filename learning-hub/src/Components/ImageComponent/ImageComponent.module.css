@@ -1,0 +1,15 @@
+.small {
+    width: 50%;
+    margin: 15px;
+    border-radius: 15px;
+}
+.medium {
+    width: 70%;
+    margin: 15px;
+    border-radius: 15px;
+}
+.large {
+    width: 90%;
+    margin: 15px;
+    border-radius: 15px;
+}
