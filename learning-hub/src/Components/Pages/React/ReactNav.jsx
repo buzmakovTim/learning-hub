@@ -43,6 +43,18 @@ export const ReactNav = () => {
             </p>
 
             <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/cssSass" >
+                CSS / SASS
+            </NavLink>
+            </p>
+
+            <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/testing" >
+                Testing
+            </NavLink>
+            </p>
+
+            <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/react/other" >
                 Other
             </NavLink>

@@ -29,7 +29,12 @@ export const ReactProps = () => {
 
             <Rating value={5}/> {/* Rating Stars Default 5 stars selected */}
 
+            <p>Here the code for this Rating Star implementation</p>
+
+            <p><b>Rating Component</b></p>
             <ImageComponent image={RatingComponentImage} size='medium'/>
+
+            <p><b>Star Component</b></p>
             <ImageComponent image={StarComponentImage} size='medium'/>
 
     </div>

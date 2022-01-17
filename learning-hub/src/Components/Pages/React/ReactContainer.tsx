@@ -7,6 +7,8 @@ import { ReactHooks } from './ReactHooks/ReactHooks'
 import { ReactRouterDom } from './ReactRouterDom/ReactRouterDom'
 import { ReactOther } from './ReactOther/ReactOther'
 import { ReactProps } from './ReactProps/ReacProps'
+import { ReactCssSass } from './ReactSccSass/ReactCssSass'
+import { ReactTesting } from './ReactTesting/ReactTesting'
 
 export const ReactContainer = () => {
 
@@ -22,7 +24,9 @@ export const ReactContainer = () => {
                 <Route path='/component' element={<ReactComponent/>}/>
                 <Route path='/props' element={<ReactProps/>}/>
                 <Route path='/hooks' element={<ReactHooks/>}/> 
-                <Route path='/routerDom' element={<ReactRouterDom/>}/>      
+                <Route path='/routerDom' element={<ReactRouterDom/>}/>
+                <Route path='/cssSass' element={<ReactCssSass/>}/>       
+                <Route path='/testing' element={<ReactTesting/>}/>   
                 <Route path='/other' element={<ReactOther/>}/>               
         </Routes>
 
