@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react'
+import { ImageComponent } from '../../../ImageComponent/ImageComponent'
 import stylingClasses from './../../../../CSS/Styles.module.css'
-
-
+import ReactTestingImage from './ReactTesting.png'
 
 export const ReactTesting = () => {
 
     
-
     return <div className={stylingClasses.mainContainer}>
             
             <h3>
@@ -14,22 +13,17 @@ export const ReactTesting = () => {
             </h3>            
             <div className={stylingClasses.line}></div>
 
+            {/* Paragraph Start */}
             <div className={stylingClasses.paragraph}>
                 
-                <h3>Here will be some other notes regarding react</h3>
+                <p>Create a file called <b>filename.test.ts</b></p>
+                <p>To <b>run the test</b> type <b>yarn test</b> and all tests will be rerun all time you save changes</p>
 
-            </div>
+            </div> {/* Paragraph End */}
 
 
-            {/* 
-            UUID
-              
-            Fot v1()  
-            yarn add uuid  ( import {v1} from ‘uuid’)  and 
-            yarn add @types/uuid   
-            */}
+            <ImageComponent image={ReactTestingImage} size='medium'/>
 
-            {/* Create new react App */}
             <br/>
             <br/>
             <br/>
