@@ -215,9 +215,10 @@ export const ArrayFunctions = () => {
 
             {/* Paragraph Start */}
             <div className={stylingClasses.paragraph}>
-                
+
                 <ul>
-                    <li><b><Link 
+                    <li><b><Link
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="filter"
                         spy={true}
@@ -225,7 +226,8 @@ export const ArrayFunctions = () => {
                         offset={0}
                         duration={500}
                         >Filter</Link></b> - not modifying the original object and pass the <b>reference</b> to the new array so (they will be the same object and can be modified from either array)</li>
-                    <li><b><Link 
+                    <li><b><Link
+                        className={stylingClasses.links} 
                         activeClass="active"
                         to="map"
                         spy={true}
@@ -233,7 +235,8 @@ export const ArrayFunctions = () => {
                         offset={0}
                         duration={500}
                         >Map</Link></b>- can modify the original object and pass to a new array Value not the Reference</li>
-                    <li><b><Link 
+                    <li><b><Link
+                        className={stylingClasses.links} 
                         activeClass="active"
                         to="find"
                         spy={true}
@@ -242,6 +245,7 @@ export const ArrayFunctions = () => {
                         duration={500}
                         >Find</Link></b>- return(reference to the object) as soon as find first match. Will Throw the Error if nothing found </li>
                     <li><b><Link 
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="forEach"
                         spy={true}
@@ -250,6 +254,7 @@ export const ArrayFunctions = () => {
                         duration={500}
                         >forEach</Link></b>- going through all elements in the array (we can modify the element)</li>
                     <li><b><Link 
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="some"
                         spy={true}
@@ -258,6 +263,7 @@ export const ArrayFunctions = () => {
                         duration={500}
                         >Some</Link></b>- return TRUE or FALSE for the entire array. If at lease one element match the criteria it returns TRUE</li>
                     <li><b><Link 
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="every"
                         spy={true}
@@ -266,6 +272,7 @@ export const ArrayFunctions = () => {
                         duration={500}
                         >Every</Link></b>- return TRUE or FALSE for the entire array. iF ALL elements match the criteria it returns TRUE otherwise FALSE</li>
                     <li><b><Link 
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="reduce"
                         spy={true}
@@ -274,6 +281,7 @@ export const ArrayFunctions = () => {
                         duration={500}
                         >Reduce</Link></b>- adding up all to accumulator and return at the end</li>
                     <li><b><Link 
+                        className={stylingClasses.links}
                         activeClass="active"
                         to="includes"
                         spy={true}

@@ -81,3 +81,7 @@ button:active {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.links:hover {
+    cursor: pointer;
+}
