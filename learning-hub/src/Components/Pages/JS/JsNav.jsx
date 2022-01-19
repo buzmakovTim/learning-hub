@@ -15,20 +15,20 @@ export const JsNav = () => {
         <div>
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/about" >
-                JavaScript About
+                About
             </NavLink>
             </p>
             
             
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/promise" >
-                JavaScript Promise
+                Promise
             </NavLink>
             </p>
 
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/asyncAwait" >
-                JavaScript Async Await
+                Async Await
             </NavLink>
             </p>
 
@@ -40,7 +40,7 @@ export const JsNav = () => {
 
             <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/other" >
-                JavaScript Other
+                Other
             </NavLink>
             </p>
         
