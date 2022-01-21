@@ -39,6 +39,13 @@ export const JsNav = () => {
             </p>
 
             <p>
+            <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/stringParsing" >
+                String Parsing
+            </NavLink>
+            </p>
+
+
+            <p>
             <NavLink className={(navData) => navData.isActive ? `${classes.activeLink}` : "" } to="/js/other" >
                 Other
             </NavLink>
