@@ -48,6 +48,12 @@ export const Header = () => {
                     React
                 </NavLink>
             </div>
+
+            <div>
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/ionic" >
+                    Ionic
+                </NavLink>
+            </div>
             
             <div>
                 <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/js" >
