@@ -32,8 +32,16 @@ export const IonicInstall = () => {
             {/* Paragraph Start */}
             <div className={stylingClasses.paragraph}>
                 
-                <p><b>1 - </b> we need to install <b>Python</b> on our computer <a href='https://www.python.org/downloads/' target='_blank'><b>DOWNLOAD PYTHON</b></a></p> 
-                <p><b>2 - </b> text editor or IDE. <a href='https://www.jetbrains.com/pycharm/download/#section=windows' target='_blank'><b>DOWNLOAD PyCharm IDE</b></a></p>
+                <p>Node.js has to be installed</p>
+                <p>Install Ionic open this <b><a href="https://ionicframework.com/docs/intro/cli" target='_blank'>LINK</a></b></p>
+                <p><b>npm install -g @ionic/cli</b> ( <b>-g</b> install globally so we can use it at any folder)</p> 
+
+                 <br/>   
+
+                
+                <p>Create a new Ionic APP - <b>ionic start</b></p>
+                <p>Start the APP - <b>ionic serve</b></p>
+
             </div> {/* Paragraph End */}
             
 
