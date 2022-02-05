@@ -55,6 +55,14 @@ export const GitAbout = () => {
                                 <p><b>Git needs to be installed on your PC/MAC.</b></p>
                 <p><b><a href='https://git-scm.com/downloads' target='_blank'>DOWNLOAD</a></b></p>
            
+
+                <div className={stylingClasses.paragraph}>
+
+                    <h4>Git Commit</h4>
+                    <p>Please see this examples for commits <b><a href="https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit-header" target="_blank">LINK</a></b></p>
+
+                </div>
+
             <br/>
             <br/>
             <br/>
