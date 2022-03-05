@@ -72,6 +72,12 @@ export const Header = () => {
                     Git
                 </NavLink>
             </div>
+
+            <div>
+                <NavLink className={(navData) => navData.isActive ? `${classes.active}` : "" } to="/db" >
+                    Data Base
+                </NavLink>
+            </div>
             
 
         </div>

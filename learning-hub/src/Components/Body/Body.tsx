@@ -7,6 +7,7 @@ import { GitContainer } from '../Pages/Git/GitContainer'
 import { JsContainer } from '../Pages/JS/JsContainer'
 import { PythonContainer } from '../Pages/Python/PythonContainer'
 import { IonicContainer } from '../Pages/Ionic/IonicContainer'
+import { DBContainer } from '../Pages/DataBase/DBContainer'
 
 export const Body = () => {
 
@@ -27,6 +28,7 @@ export const Body = () => {
                 <Route path='/js/*' element={<JsContainer/>}/>
                 <Route path='/python/*' element={<PythonContainer/>}/>
                 <Route path='/git/*' element={<GitContainer/>}/>
+                <Route path='/db/*' element={<DBContainer/>}/>
             </Routes>
         </div>
 

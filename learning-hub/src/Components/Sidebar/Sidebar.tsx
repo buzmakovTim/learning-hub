@@ -6,6 +6,7 @@ import { GitNav } from '../Pages/Git/GitNav'
 import { JsNav } from '../Pages/JS/JsNav'
 import { PythonNav } from '../Pages/Python/PythonNav'
 import { IonicNav } from '../Pages/Ionic/IonicNav'
+import { DBNav } from '../Pages/DataBase/DBNav'
 
 
 export const Sidebar = () => {
@@ -20,6 +21,7 @@ export const Sidebar = () => {
                 <Route path='/js/*' element={<JsNav/>}/>
                 <Route path='/python/*' element={<PythonNav/>}/>
                 <Route path='/git/*' element={<GitNav/>}/>
+                <Route path='/db/*' element={<DBNav/>}/>
                 
             </Routes>
             
