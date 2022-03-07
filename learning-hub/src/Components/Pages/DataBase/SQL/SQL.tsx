@@ -37,7 +37,7 @@ export const SQL = () => {
                 
                 <p><b>Relational Database (SQL)</b></p>
                 <ul>
-                    <li>Relational Database Management System (RDBMS) - <b>its a software</b>
+                    <li><b>Relational Database Management System (RDBMS) - its a software</b>
                         <ul>
                             <li>Helps users create and maintain a relational database
                                 <ul>
@@ -55,6 +55,89 @@ export const SQL = () => {
                             <li>SQL code used on one RDBMS is not always portable to another without modification</li>
                         </ul>
                     </li>
+                </ul>
+
+                <br/>
+                <h3>mySQL</h3>
+                <span>Relational Database Management System <b>(RDBMS)</b></span>
+                <p><b>Installing</b>
+                <a href="https://dev.mysql.com/downloads/mysql/" target="_blank"> Download MySQL</a></p>
+
+                <p><b>Installing</b>
+                <a href="https://popsql.com/" target="_blank"> Download PopSQL</a></p>
+
+                <br/>
+                <br/>
+                <h3>SQL data types (most common)</h3>
+                <ul>
+                    <li><b>INI</b> - Whole number</li>
+                    <li><b>DECIMAL(M,N)</b> - Decimal Numbers - Exact Value</li>
+                    <li><b>VARCHAR(1)</b> - String of text of length 1</li>
+                    <li><b>BLOB</b> - Binary Larger Object, Stores large data</li>
+                    <li><b>DATE</b> - 'YYYY-MM-DD'</li>
+                    <li><b>TIMESTAMP</b> - 'YYYY-MM-DD HH:MM:SS' - used for recording</li>
+                </ul>
+
+                <br/>
+                <br/>
+                <h3>SQL common Commands or click <a href='https://www.w3schools.com/sql/sql_syntax.asp' target="_blank">here</a></h3>
+                <ul>
+                    <li><b>Create Table</b><br/>
+                    CREATE TABLE student (<br/>
+                        &ensp;&ensp;&ensp; student_id INT PRIMARY KEY AUTO_INCREMENT,<br/>
+                        &ensp;&ensp;&ensp; name VARCHAR(20) NOT NULL,<br/>
+                        &ensp;&ensp;&ensp; major VARCHAR(20) DEFAULT 'n/a'<br/>
+                    );<br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Delete Table</b><br/>
+                    DROP TABLE student; <br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Delete column</b><br/>
+                    ALTER TABLE student DROP COLUMN name; <br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Add column</b><br/>
+                    ALTER TABLE student ADD name VARCHAR(20); <br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Show the Table all data</b><br/>
+                    SELECT * FROM student; <br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Describe the Table columns and types</b><br/>
+                    DESCRIBE student; <br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Insert data to the Table</b><br/>
+                    INSERT INFO student VALUES(1, 'Tim', 'IT field');<br/>
+                    or<br/>
+                    INSERT INFO student(name, major) VALUES('Tim', 'IT field');<br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Update</b><br/>
+                    UPDATE student <br/>
+                    SET major = 'Biology'<br/>
+                    WHERE student_it = 4;<br/>
+                    <br/>
+                    </li>
+
+                    <li><b>Getting info from the table</b><br/>
+                    SELECT * <br/>
+                    FROM student <br/>
+                    WHERE name = 'Tim';<br/>
+                    <br/>
+                    </li>
+
+
                 </ul>
 
 

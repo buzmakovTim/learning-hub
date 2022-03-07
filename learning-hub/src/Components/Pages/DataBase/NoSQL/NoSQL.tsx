@@ -36,7 +36,7 @@ export const NoSQL = () => {
                 
                 <p><b>Non-Relational Database (noSQL / not just SQL)</b></p>
                 <ul>
-                    <li>Non-Relational Database Management System (NRDBMS) - <b>its a software</b>
+                    <li><b>Non-Relational Database Management System (NRDBMS) - its a software</b>
                         <ul>
                             <li>Helps users create and maintain a non-relational database
                                 <ul>
@@ -53,6 +53,9 @@ export const NoSQL = () => {
                         </ul>
                     </li>
                 </ul>
+
+
+                
 
 
             </div> {/* Paragraph End */}
